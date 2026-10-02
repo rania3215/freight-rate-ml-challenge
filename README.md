@@ -1,5 +1,5 @@
-# Freight Rate Prediction Challenge
-
+# Freight Rate Prediction 
+Machine learning pipeline for predicting spot freight rates using CatBoost regression and time-aware validation.
 ## Approach
 - Labeled development data: 48,000 rows from January-October 2025.
 - Final validation set: 12,000 rows from November-December 2025.
@@ -14,7 +14,7 @@
 - RMSE: 633.69
 - MAE: 122.17
 - R²: 0.8276
-- Best iteration from early stopping: 178
+- Final model iterations: 177
 
 ## Run
 ```bash
@@ -29,5 +29,3 @@ python score.py --predictions validation_predictions.csv --december-predictions 
 - `scorer_results/candidate_december.png`
 - `freight_rate_catboost.cbm`
 
-## Submission
-Submit the GitHub repository, `validation_predictions.csv`, the PDF report, the December chart, and the 2-3 minute Loom walkthrough.
