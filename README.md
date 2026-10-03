@@ -16,11 +16,40 @@ Machine learning pipeline for predicting spot freight rates using CatBoost regre
 - R²: 0.8276
 - Final model iterations: 177
 
+
 ## Run
-```bash
+
+### 1. Create and activate a virtual environment
+
+**Windows PowerShell:**
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+### 2. Install dependencies
+
+```powershell
 python -m pip install -r requirements.txt
+```
+
+### 3. Train the model
+
+```powershell
 python train_model.py
+```
+
+### 4. Generate and score predictions
+
+```powershell
 python score.py --predictions validation_predictions.csv --december-predictions data/december_chart_inputs.csv
+```
+
+The final validation predictions are saved in:
+
+```text
+validation_predictions.csv
 ```
 
 ## Outputs
